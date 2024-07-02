@@ -1,0 +1,61 @@
+@import './custom.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* custom css */
+
+.custom-head{
+ /*    color: bisque;
+    font-weight: bold; */
+    @apply bg-customBlue text-customGreen py-5;
+}
+.gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  }
+
+  /* 
+  .eye-1 {
+    animation: eye 2.4s infinite;
+  }
+
+  .eye-2 {
+    animation: squeeze 2.4s infinite;
+  }
+
+  @keyframes eye {
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+
+    93% {
+      transform: translateY(15px) scaleY(0)
+    }
+
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes squeeze {
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+
+    93% {
+      transform: translateY(3px) scaleY(0.8)
+    }
+
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
+  .text-pink{
+    padding: 10px;
+    margin-left: 20px;
+  }
+ */
