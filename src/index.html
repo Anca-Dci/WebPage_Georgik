@@ -19,20 +19,23 @@
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
 
-  <Header class="bg-slate-60  top-0 z-10 p-10 fixed w-full top-0 ">
+  <Header class="bg-slate-60  top-0 z-10 p-10 fixed w-full transition-all duration-500 ease-in-out bg-gradient-to-blue opacity-85 focus:lg:mt-0 bg-#ce5231">
+
   <nav id="header" class="fixed w-full top-0"> 
    
     <!-- logo class -->
   <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-0">
   <div class="sm:flex-row flex justify-center item-center">
        <a class=" text-white no-underline hover:no-underline font-bold text-1xl lg:text-4xl rounded-lg" href="#">
-        <a href="#"><img src="./img/Bildschirmfoto vom 2024-07-01 09-24-30.png" alt="" class=" w-80 h-auto mt-1 rounded-full "></a>
-        
+        <a href="#"><img src="./img/Bildschirmfoto vom 2024-07-01 09-24-30.png" alt="" class=" w-80 h-auto  mt-1 rounded-full "></a>
+
+   <!-- burgermenu     
+ -->
   <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
     &#9776;
   </button> </a></div>
- </div>
-  </nav>
+ </div></nav>
+
 
 <div class="w-full rounded-lg flex-grow lg:flex lg:items-center lg:auto hidden mt-2 lg:mt-0 bg-white lg:bg-white text-red-400 p-4 lg:p-0 z-20" id="nav-content">
   <ul class="list-reset lg:flex justify-end flex-1 items-center">
@@ -44,21 +47,23 @@
       <a class="inline-block lg:mx-0 text-red-400 no-underline hover:text-gray-800 hover:text-underline py-2 px-2 transform transition hover:scale-105 duration-300 ease-in-out" href="#">Kontakt</a>
     </li>
   </ul>
-
+<!--  buton play -->
   <button id="navAction"
-  class="mx-auto lg:mx-0 hover:underline bg-white text-amber-600 font-bold rounded-full border-1
-   border-amber-600 mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none 
-  focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Play</button></div></div>
- <!--  border linien -->
-  <hr class="border-b border-gray-200 opacity-25 my-0 py-3"/></nav>
+  class="mx-auto lg:mx-0 hover:underline bg-white text-pink-800
+  font-bold rounded-full border-2
+   border-amber-600 mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 
+   focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Play
+</div></div></button>
+
+  <!--  border linien -->
+ <hr class="border-b border-gray-200 opacity-23 my-0 py-9"/></nav>
   </Header>
   
-  <!-- foto -->
-  <div class="icon">
-    <div class="container py-40 px-1 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+  <!-- foto RIGHT am pus margini de 5rem pe fiecare part si propritatile de flex flex-wrap iar la micsorarea ecranului am distribut-o in rand pe centru-->
+  <div class="bild">
+    <div class="py-40 px-1 mx-20 flex flex-wrap flex-col md:flex-row items-center">
+     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left py-40">
 
-    <!-- LeftCOL -->
-     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left py-10">
       <p class="uppercase tracking-loose w-full">What business are you?</p>
       <a class="slogan text-white-500 py-2 underline" href="https://google.com/">My Slogan</a>
 
@@ -73,8 +78,8 @@
         Subscribe</button></div> 
 
     <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6 text-center ">
-      <img class="w-full md:w-4/5 z-50 w-90 h-auto mt-1 rounded-lg" src="./img/facebook_1719831530726_7213496268651153041.jpg" alt=""/></div></div></div>
+      <div class="md:w-3/5 text-center ">
+      <img class="z-50 w-auto h-auto mt-2 rounded-lg" src="./img/facebook_1719831530726_7213496268651153041.jpg" alt=""/></div></div></div>
     
       <!-- ~meine lieblings Effekt~ -->
       <div class="relative -mt-12 lg:-mt-24">

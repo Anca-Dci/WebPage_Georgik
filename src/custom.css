@@ -6,5 +6,26 @@
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
   }
 
-  
-  
+ /*  .header {
+   background: linear-gradient(to right, #1e3a8a, #3b82f6);
+   transition: background 0.3s;
+}
+.header.scrolled {
+   background:  linear-gradient(to right, #d53369, #3b82f6);
+}
+   */
+   
+   .bg-gradient-to-blue {
+   @apply bg-gradient-to-r from-blue-950 via-amber-200 to-pink-700;
+ }
+ 
+ @media (min-width: 0) {
+   header {
+     transition: background-color 20s ease;
+   }
+
+   /* Changing the header background color on scroll */
+   body.scroll > header {
+     background-color:#040505; /* Tailwind's blue-800 color */
+   }
+ }
