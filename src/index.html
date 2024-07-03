@@ -18,53 +18,51 @@
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
 
-  <Header class="bg-slate-60  top-0 z-10 p-10 fixed w-full transition-all duration-500 ease-in-out bg-gradient-to-blue opacity-85 focus:lg:mt-0 bg-#ce5231">
+  <Header class="bg-slate-60  top-0 z-10 p-12 mt-0 fixed w-full h-auto transition-all duration-500 ease-in-out bg-gradient-to-blue opacity-95 focus:bg-white ">
 
-  <nav id="header" class="fixed w-full top-0"> 
+  <nav id="header" class="fixed w-full top-0 flex"> 
+    
    
-    <!-- logo class -->
-  <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-0">
+    <!-- logo class aici  When the parent is a flex container, we want to make sure the image never shrinks, so we’ve added md:shrink-0 to prevent shrinking on medium screens and larger. Technically we could have just used 
+     shrink-0 since it would do nothing on smaller screens, but since it only matters on md screens, it’s a good idea to make that clear in the class name.-->
+  
+<!--   <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-0"> -->
   <div class="sm:flex-row flex justify-center item-center">
-       <a class=" text-white no-underline hover:no-underline font-bold text-1xl lg:text-4xl rounded-lg" href="#">
-        <a href="#"><img src="./img/Bildschirmfoto vom 2024-07-01 09-24-30.png" alt="" class=" w-80 h-auto  mt-1 rounded-full "></a>
+       <a class=" text-white no-underline hover:no-underline font-bold text-1xl p-0 md:h-full after:md:w-48 lg:text-4xl" href="#">
+        <a href="#"><img src="./img/Bildschirmfoto vom 2024-07-01 09-24-30.png" alt="" class="w-80 m-1 sm:rounded-full lg:rounded-none"></a>
 
    <!-- burgermenu   i-am dat un padding si l-am mutat spre dreapta
  -->
   <button id="mobile-open-button" class=" p-20 text-3xl sm:hidden focus:outline-none">
     &#9776;
-  </button> </a></div>
- </div></nav>
+  </button> </a></div></div></nav>
 
 
-<div class="w-full rounded-lg flex-grow lg:flex lg:items-center lg:auto hidden mt-2 lg:mt-0 bg-white lg:bg-white text-red-400 p-4 lg:p-0 z-20" id="nav-content">
+<div class="w-full rounded-lg flex-grow lg:flex lg:items-center lg:auto hidden mt-2 lg:mt-0 bg-white lg:bg-white h-15 text-red-400 p-8 lg:p-0 z-20" id="nav-content">
+  
   <ul class="list-reset lg:flex justify-end flex-1 items-center">
     <li class="mr-3">
-      <a class="inline-block py-10 px-2 text-red-400 font-bold no-underline  hover:text-gray-800 hover:text-underline py-2 px-6 transform transition hover:scale-105 duration-300 ease-in-out" href="#">Über mich</a></li>
-    <li class="mr-3">
-      <a class="inline-block text-rose-400 no-underline hover:text-gray-800 hover:text-underline py-2 px-2 transform transition hover:scale-105 duration-300 ease-in-out" href="#">Testimonials</li>
-    <li class="mr-3">
-      <a class="inline-block lg:mx-0 text-red-400 no-underline hover:text-gray-800 hover:text-underline py-2 px-2 transform transition hover:scale-105 duration-300 ease-in-out" href="#">Kontakt</a>
+      <a href="#about" class="inline-block text-red-400 font-bold no-underline 
+       hover:text-blue-950 hover:text-underline py-2 px-8 transform transition hover:scale-105 duration-300 ease-in-out">Über mich</a></li>
+    
+      <li class="mr-3">
+     <a href="#testimonials" class="inline-block text-rose-400 
+     no-underline hover:text-gray-800 hover:text-underline py-2 px-2 transform transition hover:scale-105 duration-300 ease-in-out">Testimonials</li>
+    
+     <li class="mr-3">
+      <a href="#kontakt" class="inline-block lg:mx-0 text-red-400 no-underline hover:text-blue-950 
+      hover:text-underline py-2 px-2 transform transition hover:scale-105 duration-300 ease-in-out">Kontakt</a>
     </li>
   </ul>
-<!--  buton play -->
-  <button id="navAction"
-  class="mx-auto lg:mx-0 hover:underline bg-white text-pink-800
-  font-bold rounded-full border-2
-   border-amber-600 mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 
-   focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Play
-</div></div></button>
 
   <!--  border linien -->
- <hr class="border-b border-gray-200 opacity-23 my-0 py-9"/></nav>
+ <hr class="border-b border-gray-200 opacity-25 my-0 py-9"/></nav>
   </Header>
   
   <!-- foto RIGHT am pus margini de 5rem pe fiecare part si propritatile de flex flex-wrap iar la micsorarea ecranului am distribut-o in rand pe centru-->
   <div class="bild">
     <div class="py-40 px-1 mx-20 flex flex-wrap flex-col md:flex-row items-center">
      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left py-40">
-
-      <p class="uppercase tracking-loose w-full">What business are you?</p>
-      <a class="slogan text-white-500 py-2 underline" href="https://google.com/">My Slogan</a>
 
       <h1 class="my-6 text-5xl font-bold leading-tight">Die Stimme der Rumänen in Deutschland!
       </h1>  
@@ -75,6 +73,7 @@
       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 
       px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
         Subscribe</button></div> 
+
 
     <!--Right Col-->
       <div class="md:w-3/5 text-center ">
@@ -93,50 +92,246 @@
       <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
         <path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
         ></path></g></g></svg></div>
+
+
       <!--   sectiuni din body -->
 <section class="bg-white border-b py-8">
   <div class="container max-w-5xl mx-auto m-8">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-      Title</h2>
-
+    <h2 class=" w-full p-6 mt-4 shadow-2xl lg:mt-0  opacity-100 
+    focus:shadow-slate-900 transform transition 
+    hover:scale-105 duration-300 ease-in-out rounded-2xl  my-2 text-4xl font-bold leading-tight text-right mr-60 text-red-800">Wer bin ICH?</h2>
     <div class="w-full mb-4">
-      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div></div>
+      </div></div></div>
 
     <div class="flex flex-wrap">
       <div class="w-5/6 sm:w-1/2 p-6">
-        <h3 class="text-3xl text-gray-800 font-bold mb-3">
-          Lorem ipsum dolor sit amet</h3>
-        <p class="text-gray-600 mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.A
-          <br/><br/></p></div>
-          <div class="w-full sm:w-1/2 p-8">
-          <video src="./img/1536322-hd_1920_1080_30fps.mp4" controls play></video></div></div></div>
-
-
+        <h3 class="w-full text-3xl text-red-900 font-bold mb-3 m-10 bg-amber-200 border-amber-600 p-4 mt-4 shadow-2xl lg:mt-0  opacity-100 
+        focus:shadow-slate-900 transform transition hover:scale-105 duration-300 ease-in-out rounded-2xl"> Ich bin GEORGIANA TINCEA, 
+          </h3>
+        <p class="text-black font-extrabold font-serif mb-8 m-10 p-10 bg z-10 transition-all duration-500 ease-in-out bg-gradient-to-amber opacity-65 rounded-xl focus:bg-white ">
+          Eine Beraterin der sich dafür einsetzt, 
+          Rumänen in Deutschland dabei zu helfen, ihre Rechte kennenzulernen und auch dort zu handeln, 
+          wo sie aufgrund mangelnder Deutschkenntnisse nicht zurechtkommen.
+          Ich bin ein rumänischer Rechtsanwalt mit Wohnsitz in Deutschland, 
+          seit 1998 Mitglied der Rechtsanwaltskammer Timis und seit 2005 der Rechtsanwaltskammer Freiburg. Wenn Sie also Ihren Wohnsitz oder Wohnsitz in einem dieser 
+          beiden Länder haben, kann ich Sie vor den deutschen oder rumänischen Gerichten vertreten . Weitere Beratungs- und Kontaktmöglichkeiten finden Sie Hier.
+          Weitere Informationen im beigefügten Video.<br><br>
+         
+        <!--  button Play -->
+          <button id="navAction"
+          class=" lg:mx-0 hover: bg-blue-700 text-white
+          font-bold rounded-full border-1 py-4 px-10 z-50
+           border-amber-600 mt-4 lg:mt-0 shadow opacity-100 shadow-2xl shadow-black
+           focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+           <a href="./img/1536322-hd_1920_1080_30fps.mp4" target="_blank">Play</a>
+          </button></p>
+      </div>
+          
+          <div class="w-full sm:w-1/2 ">
+            <div class="animate-composition">
+            <img src="./img/FB_IMG_1719831520501.jpg" alt="" class="mt-32 ml-32 shadow-lg shadow-slate-900  max-w-80 rounded-full focus:shadow-outline 
+            transform transition hover:scale-125 duration-300 ease-in-out">
+            <br/><br/></div></div>
+           </div></div>
+            
+ <!-- <div class="h-1 mx-auto gradient  opacity-25 my-0 py-0 rounded-t"
+> -->
   
-  <div class="flex flex-wrap flex-col-reverse sm:flex-row"> <title>Vernetzte Menschen</title>
-    <div class="w-full sm:w-1/2 p-6 mt-6">
-      <img src="./img/undraw_connected_world_wuay.svg" alt="">
-      <title>Vernetzte Menschen</title>
-      <div class="w-full sm:w-1/2 p-6 mt-6">
-      <div class="align-middle">
-        
-        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, laboriosam?</h3>
-        <p class="text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis provident, id iusto magnam assumenda?</p>
-        <br/>
-        <br/>
-      
-      
-      </div></div></div></div>
-      </div>
-      </div>
-      </div>
-    </div>
-  </div>
+        </br> </br></div></section></section>
+     
+     
+<svg
+class="wave-top"
+viewBox="0 0 1439 147"
+version="1.1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+    <g class="wave" fill="#f8fafc">
+      <path
+        d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+      ></path>
+    </g>
+    <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+      <g
+        transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
+      >
+        <path
+          d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+          opacity="0.100000001"
+        ></path>
+        <path
+          d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+          opacity="0.100000001"
+        ></path>
+        <path
+          d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+          opacity="0.200000003"
+        ></path>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
+  
+      <section class="container mx-auto text-center py-6 mb-12">
+        <h2
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+        >
+          Call to Action
+        </h2>
+        <div class="w-full mb-4">
+          <div
+            class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+        <h3 class="my-4 text-3xl leading-tight">
+          Botschaft des Haupthelden, Lassen Sie die Informationen und Maßnahmen Ihr Leben verändern!</h3>
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full 
+            my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105
+             duration-300 ease-in-out"><a href="#formular" class="hover:opacity-90">Action!</a></a>
+       </section> </button>
 
-  </div>
-  </section>
-  <article></article>
-  <footer></footer>
+       <section id="testimonials"
+            class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2
+                class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+               
+               
+                Testimonials
+            </h2>
+            <figure class="my-12">
+                <blockquote
+                    class=" bg-red-500 opacity-65 font-thin pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-l sm:text-xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute
+                        before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 
+                        before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 
+                        after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex commodi modi ut architecto eligendi voluptatem voluptatum repellat. 
+                        Soluta pariatur accusantium voluptatibus ex nemo inventore enim doloribus ratione similique suscipit?<span class="italic">Professionelle </span> 
+                        we recomend
+                    </p>
+                </blockquote>
+                <figcaption
+                    class="italic text xl sm:text-2xl text-right mt-2 dark:text-slate-900">
+                    &#8212; Ines, Frankfurt;
+                </figcaption>
+            </figure>
+
+
+            <figure class="my-12">
+                <blockquote
+                    class=" bg-red-700 opacity-65 font-thin pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-xl sm:text-l text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute
+                         before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 
+                         before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 
+                         after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex commodi modi ut architecto eligendi voluptatem voluptatum repellat. 
+                        Soluta pariatur accusantium voluptatibus ex nemo inventore enim doloribus ratione similique suscipit?<span class="italic">Professionelle </span> 
+                        we recomend
+                    </p>
+                </blockquote>
+                <figcaption
+                    class="italic text-xl sm:text-m text-right mt-2 text-slate-50">
+                    &#8212; Ines, Frankfurt;
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote
+                    class= "bg-red-950 opacity-65 font-thin  pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-xl sm:text-2xl text-left mt-2 text-white  before:content-['\201C'] before:font-serif before:absolute
+                    before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 
+                    before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 
+                    after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5">  She is the best! Life changing with Georgica!
+                    </p>
+                </blockquote>
+                <figcaption
+                    class="italic text xl sm:text-2xl text-right mt-2 text-slate-00">
+                    &#8212; Max Mustermann, Genius
+                </figcaption>
+            </figure>
+        </section>
+        
+        <section class="formular">
+          <div class="row">
+              <div class="book">
+                  <div class="book__form">
+                      <form action="#" class="form">
+                          <div class="u-margin-bottom-medium">
+                              <h1 class="heading-secondary font-extrabold ">
+                                TERMIN fur BERATUNG FORMULAR
+                              </h1>
+                              <h2>Sie benötigen rechtlichen Beistand? Dann vereinbaren Sie einen Termin mit mir! Ich freue mich auf Sie!</h2>
+                          </div>
+
+                          <div class="form__group">
+                              <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                              <label for="name" class="form__label">Full name</label>
+                          </div>
+                          <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Adresse" id="name" required>
+                            <label for="name" class="form__label">Adresse</label>
+                        </div>
+                          <div class="form__group">
+                              <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                              <label for="email" class="form__label">Email address</label>
+                          </div>
+
+                          <div class="form__group u-margin-bottom-medium">
+                              <div class="form__radio-group">
+                                  <input type="radio" class="form__radio-input" id="small" name="size">
+                                  <label for="small" class="form__radio-label">
+                                      <span class="form__radio-button"></span>
+                                      Mit dem Absenden stimme ich den Datenschutzbedingungen zu.
+                                  </label>
+                              </div>
+                          </div>
+                        
+                              <button class="btn bg-pink-900 border-blue-950 w-64 inline-block rounded-lg p-9">Send</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
 </body>
+
+       <!--  My Footer -->
+
+
+  <footer class="bg-pink-900 text-white text-xl" id="footer">
+    <section class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+        <address>
+            <h2>Vocea Romanilor din Germania GmbH</h2>
+
+            Hauptstraße 1,<br />
+            12345, Berlin.<br />
+            Germany Email:
+            <a href="mailto:info@georgica.com">Info@georgica.com</a><br />
+            Phone: <a href="tel:+49123456789">+49 123 456 789</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+            <a href="#action" class="hover:opacity-90">Our Apps</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#kontakt" class="hover:opacity-90">Kontakt</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+            <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+            <p class="text-right">All Rights Reserved</p>
+        </div>
+    </section>
+</footer>
+  <p class="footer__copyright text-center">
+    Built by <a href="#" class="footer__link">Anca Burlacu</a> for her online course</a>.
+    Copyright &copy; by Anca Mihaela Burlacu2024.
+    <p class="text-center">All Rights Reserved</p>
+</p>
 </html>

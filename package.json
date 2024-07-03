@@ -3,7 +3,7 @@
   "version": "1.0.0 start",
   "main": "index.js",
   "scripts": {
-  "start":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7"
   }
 }

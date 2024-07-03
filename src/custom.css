@@ -6,14 +6,6 @@
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
   }
 
- /*  .header {
-   background: linear-gradient(to right, #1e3a8a, #3b82f6);
-   transition: background 0.3s;
-}
-.header.scrolled {
-   background:  linear-gradient(to right, #d53369, #3b82f6);
-}
-   */
    
    .bg-gradient-to-blue {
    @apply bg-gradient-to-r from-blue-950 via-amber-200 to-pink-700;
@@ -30,4 +22,20 @@
    }
  }
 
- 
+ .wave-top{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  }
+
+  .bg-gradient-to-amber {
+    @apply bg-gradient-to-b from-amber-400 via-amber-200 opacity-25;
+  }
+  
+  @media (min-width: 0) {
+    header {
+      transition: background-color 20s ease;
+    }
+  }
+  .animation-composition{
+    animation: wiggle 1s ease-in-out;
+  }
+   
